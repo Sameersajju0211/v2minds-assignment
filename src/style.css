@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+body {
+  background-color: #f4f4f9;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-color: #ffffff;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+.note-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 20px;
+}
+
+.note-input {
+  flex: 1;
+  min-width: 0;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.note-input h1 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+textarea {
+  width: 100%;
+  max-width: 500px;
+  height: 120px;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  resize: none;
+}
+
+button {
+  padding: 12px 24px;
+  margin: 5px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.note-view {
+  flex: 1;
+  min-width: 0;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.note-view h2 {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.note-view ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.note-view li {
+  background: #f9f9f9;
+  margin: 5px 0;
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.note-view div {
+  display: flex;
+}
+
+.note-view button {
+  background-color: red;
+  padding: 6px 12px;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  margin-left: 5px;
+}
+
+.note-view button:hover {
+  background-color: darkred;
+  transform: scale(1.05);
+}
+
+.note-view button:first-of-type {
+  background-color: #28a745;
+}
+
+.note-view button:first-of-type:hover {
+  background-color: #218838;
+}
+
+.close-button {
+  background-color: #dc3545;
+  padding: 12px 24px;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.close-button:hover {
+  background-color: #c82333;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .App {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .note-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .note-input,
+  .note-view {
+    width: 100%;
+  }
+}

@@ -1,0 +1,12 @@
+.App {
+  text-align: center;
+}
+
+.note-container {
+  margin: auto;
+  max-width: 600px;
+}
+
+.note-view {
+  margin-top: 20px;
+}
